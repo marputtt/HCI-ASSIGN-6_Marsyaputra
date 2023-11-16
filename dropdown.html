@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+     
+        .dropbtn {
+         background-color: #4CAF50;
+         color: white;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+        }
+        
+       
+        .dropdown {
+         position: relative;
+         display: inline-block;
+        }
+        
+  
+        .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+        }
+       
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+        <script>
+        $(document).ready(function(){
+         $(".dropdown-content").hide();
+        
+         $(".dropdown").click(function(){
+            $(this).find(".dropdown-content").slideToggle("fast");
+         });
+        });
+        </script>
+        <style>
+            body{
+                text-align: center;
+    margin: 400px;
+            }
+            .navigation-links-nav {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .navigation-links-navlink {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  .navigation-links-navlink1 {
+    margin-left: var(--dl-space-space-twounits);
+    text-decoration: none;
+  }
+  .navigation-links-text {
+    margin-left: var(--dl-space-space-twounits);
+  }
+  .navigation-links-text1 {
+    margin-left: var(--dl-space-space-twounits);
+  }
+  .navigation-links-text2 {
+    margin-left: var(--dl-space-space-twounits);
+  }
+  
+        </style>
+</head>
+<body>
+    <nav class="home-nav">
+        <nav class="navigation-links-nav navigation-links-root-class-name19">
+          <a href="index.html" class="navigation-links-navlink">
+            <span>Home  </span>
+          </a>
+          <a href="image-gallery.html" class="navigation-links-navlink">
+            <span>Image Gallery  </span>
+          </a>
+          <a href="price-calc.html" class="navigation-links-navlink">
+          <span class="navigation-links-text"><span>Calculator  </span></span>
+        </a>
+        <a href="dropdown.html" class="navigation-links-navlink">
+          <span class="navigation-links-text1"><span>dropdown  </span></span> </a>
+          <a href="zoom.html" class="navigation-links-navlink">
+          <span class="navigation-links-text2"><span>Zoom image  </span></span></a>
+        </nav>
+      </nav>
+<h2>Display the menu</h2>
+
+<div class="dropdown">
+ <button class="dropbtn">Meenu</button>
+ <div class="dropdown-content">
+    <a href="#">pizza</a>
+    <a href="#">noodle</a>
+    <a href="#">pork</a>
+    <a href="#">Steak</a> <a href="#">UUUUUUUUUUUUUU</a> 
+</div>
+</div>
+
+
+</body>
+
+</html>
